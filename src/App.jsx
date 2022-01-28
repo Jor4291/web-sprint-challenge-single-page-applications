@@ -1,29 +1,36 @@
 import React from "react";
-import {Switch, Route} from 'react-router-dom';
-// import pizzaForm from "./component/Pizza";
+import {Switch, Route, } from 'react-router-dom';
+import PizzaForm from "./component/PizzaForm.jsx";
 
 const App = () => {
   return (
     <>
       <header>
-        <Switch>
-          <Route exact path ="/">
-      <h1>Bloom Bites</h1>
-      <button href="/">Home</button>
-      </Route>
-      </Switch>
+        <h1>Bloom Bites Pizzeria</h1>
+       
+        <nav>
+          <button to ="/">Home</button>
+          <h2>
+            Click on the Button to get started with your order!
+          </h2>
+          <button to ="/PizzaForm">Order here!</button>
+        </nav>
+        <img src="../Assets/Pizza.jpg" alt="fresh hot pizza"/>
       </header>
-     <p>The best pizza on the web!</p>
+
+    <main>
+      <Switch>
+        <Route exact path="/">
+
+        </Route>
+        <Route exact path ="/PizzaForm">
+          <PizzaForm/>
+        </Route>
+      </Switch>
+    </main>
      
     
-      <main>
-       <Switch>
-         <Route exact path ="/Pizza.jsx">
-           <button href ="/Pizza.jsx"> click on the button to make a pizza</button>
-         </Route>
-        </Switch>
-      </main>
-      
+
       
     </>
   );
