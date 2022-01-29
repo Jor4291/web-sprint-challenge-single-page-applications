@@ -35,6 +35,31 @@ const specToppings = {
                 <option value ="Spicy Blazin' Buffalo Sauce">Spicy Blazin' Buffalo Sauce</option>
                 </select>
         </label>
+        <h4>Extra Toppings</h4>
+        <label>
+           Pepperoni:
+            <input type = "checkbox" 
+            name = "Pepperoni"/>
+        </label>
+        <br/>
+        <label>
+           Bill-E's Bacon:
+            <input type = "checkbox" 
+            name = " Bill-E's Bacon"/>
+        </label>
+        <br/>
+        <label>
+           Oven Roasted Garlic:
+            <input type = "checkbox" 
+            name = " Oven Roasted Garlic"/>
+        </label>
+        <br/>
+        <label>
+           Organic Baby Spinach:
+            <input type = "checkbox" 
+            name = "Organic Baby Spinach"/>
+        </label>
+        
        </form>
     
 
