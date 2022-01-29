@@ -13,10 +13,11 @@ const App = () => {
           <h2>
             Try one of our great specialty pizzas or make your own!
           </h2>
-          
-          <Link to ="/PizzaForm/PBJ">specialty PBJ</Link>
+          <Link to ="/PizzaForm">Build Your Own!</Link>
           <br></br>
-          <Link to ="/PizzaForm/Margarita">Margarita</Link>
+          <Link to ="/PizzaForm/PBJ">PBJ</Link>
+          <br></br>
+          <Link to ="/PizzaForm/Margherita">Margherita</Link>
           <br></br>
           <Link to ="/PizzaForm/White">White</Link>
           <br></br>
