@@ -11,9 +11,9 @@ const App = () => {
         <nav>
           <Link to ="/">Home</Link>
           <h2>
-            Try one of our great specialty pizzas or make your own!
+            Try one of our great specialty pizzas or build your own!
           </h2>
-          <Link to ="/PizzaForm">Build Your Own!</Link>
+          <Link to ="/PizzaForm/Build-Your-Own-Pizza">Build-Your-Own-Pizza!</Link>
           <br></br>
           <Link to ="/PizzaForm/PBJ">PBJ</Link>
           <br></br>
