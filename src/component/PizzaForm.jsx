@@ -1,20 +1,16 @@
 import {React} from 'react';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
+const PizzaForm = (props) =>{
+  console.log(props)
 
-const pizzaForm = (props) =>{
-    console.log(props)
+  const params = useParams()
  return(
         <>
-        <h2> Order & Create your own Pizza Here!</h2>
-        <img src ="../Assets/Pizza.jpg" alt="delicious fresh pizza"/>
-        <form id = 'name-input'>
-            <input name=""  type="text"/>
-        </form>
-        <form id = 'pizza-form'/>
-            
+        <h3> Thanks for ordering a delicious {params.specialty} add to your order or customize a pizza bellow </h3>
         </>
     )
 }
 
-export default pizzaForm;
+export default PizzaForm;

@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route, } from 'react-router-dom';
+import {Switch, Route, Link } from 'react-router-dom';
 import PizzaForm from "./component/PizzaForm.jsx";
 
 const App = () => {
@@ -9,21 +9,28 @@ const App = () => {
         <h1>Bloom Bites Pizzeria</h1>
        
         <nav>
-          <button to ="/">Home</button>
+          <Link to ="/">Home</Link>
           <h2>
-            Click on the Button to get started with your order!
+            Try one of our great specialty pizzas or make your own!
           </h2>
-          <button to ="/PizzaForm">Order here!</button>
+          
+          <Link to ="/PizzaForm/PBJ">specialty PBJ</Link>
+          <br></br>
+          <Link to ="/PizzaForm/Margarita">Margarita</Link>
+          <br></br>
+          <Link to ="/PizzaForm/White">White</Link>
+          <br></br>
+          <Link to ="/PizzaForm/BigPig">BigPig</Link>
         </nav>
+        <br></br>
         <img src="../Assets/Pizza.jpg" alt="fresh hot pizza"/>
       </header>
 
     <main>
       <Switch>
         <Route exact path="/">
-
         </Route>
-        <Route exact path ="/PizzaForm">
+        <Route exact path ="/PizzaForm/:specialty">
           <PizzaForm/>
         </Route>
       </Switch>
