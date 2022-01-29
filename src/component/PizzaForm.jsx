@@ -101,7 +101,15 @@ const specToppings = {
         <h4>Special Instructions for the Chef!</h4>
         <input type = "text"/>
         </label>
-        
+        <br/>
+        <label>
+            <br/>
+            <button>
+                Submit Your Order!
+                <input type ="button"
+                name = "Submit Your Order!"/>
+            </button>
+        </label>
        </form>
        <br/>
        </section>
